@@ -1,0 +1,57 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+    color: #333;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+h2#result {
+    font-size: 1.8em;
+    margin-top: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+/* Style for different result messages */
+h2#result::before {
+    content: '';
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+h2#result:where([data-text="🎉 Congratulation everyone has passed"]) {
+    background-color: #2ecc71;
+    color: white;
+}
+
+h2#result:where([data-text="❌ Unfortunately everyone has failed"]) {
+    background-color: #e74c3c;
+    color: white;
+}
+
+h2#result:where([data-text="🤔 Some passed some failed"]) {
+    background-color: #f1c40f;
+    color: white;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2#result {
+        font-size: 1.5em;
+    }
+}
