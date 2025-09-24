@@ -1,0 +1,17 @@
+const result = document.getElementById('result');
+        const students = [
+      { name: "Jacob", score: 80 },
+      { name: "Jovan", score: 60 },
+      { name: "Alaiza", score: 75 },
+      { name: "Anna", score: 90 },
+      { name: "Maureen", score: 68 }
+    ];
+    const allPassed = students.every(student=> student.score >= 75);
+    const someFailed = students.some(student=> student.score < 75);
+    if(allPassed) {
+        result.textContent = "🎉 Congratulation everyone has passed";
+    } else if (!someFailed) {
+        result.textContent = "❌ Unfortunately everyone has failed";
+    } else {
+        result.textContent = "🤔 Some passed some failed";
+    }
