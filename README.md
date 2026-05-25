@@ -21,7 +21,9 @@ This project checks whether **some students passed** or **all students passed** 
 
 ## 📁 Project Structure
 ├── index.html
+
 ├── Styles.css
+
 └── script.js
 
 ## 🚀 How to Run
@@ -41,9 +43,3 @@ The application:
   - **"Did some students pass?"** → Uses `.some()`
   - **"Did all students pass?"** → Uses `.every()`
 - Shows the result instantly
-
----
-
-**Made for learning JavaScript Array Methods** 🎓
-
-Feel free to use and modify this project!
